@@ -39,8 +39,8 @@ jobs:
           black: true
           flake8: true
       -
-        name: run migrations and test python true_house/manage.py test activities.tests
-        run: python true_house/manage.py migrate
+        name: run migrations and test
+        run: python true_house/manage.py migrate && python true_house/manage.py test activities.tests
         env:
           POSTGRES_DB: db_test
           POSTGRES_USER: user_test
