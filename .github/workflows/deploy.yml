@@ -75,4 +75,4 @@ jobs:
       #     host: ${{ secrets.EC2_HOST }}
       #     key: ${{ secrets.EC2_KEY }}
       #     port: ${{ secrets.EC2_PORT }}
-      #     script: 'sudo docker-compose -f /root/docker-compose.yaml up -d --build web'
+      #     script: ' sudo docker-compose -f /root/docker-compose.yaml pull web && sudo docker-compose -f /root/docker-compose.yaml up -d --build web'
